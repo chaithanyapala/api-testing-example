@@ -9,6 +9,10 @@
   "engines": {
     "node": "=16.6.2"
   },
+  "jest":{"collectCoverage": true,
+   	 "coverageReporters":["lcov"],
+	"coverageDirectory":".output/code-coverage/"
+},
   "scripts": {
     "start": "node .",
     "test": "jest test/**.test.js",
