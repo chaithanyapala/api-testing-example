@@ -9,11 +9,16 @@
   "engines": {
     "node": "=16.6.2"
   },
-  "jest":{"collectCoverage": true,
-   	 "coverageReporters":["lcov"],
-	"coverageDirectory":".output/code-coverage/",
-	  "reporters":["./node_modules/jest-html-reporters"]
-},
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov"
+    ],
+    "coverageDirectory": ".output/code-coverage/",
+    "reporters": [
+      "./node_modules/jest-html-reporters"
+    ]
+  },
   "scripts": {
     "start": "node .",
     "test": "jest test/**.test.js",
@@ -45,6 +50,6 @@
     "eslint-config-google": "^0.14.0",
     "husky": "^5.2.0",
     "jest": "^26.1.0",
-	  "jest-html-reporter": "^3.0.0"
+    "jest-html-reporters": "^3.0.10"
   }
 }
